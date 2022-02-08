@@ -1,0 +1,47 @@
+
+.Contact {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid black;
+  border-radius: px;
+  padding: 10px;
+  background-color: #effcde;
+  &:hover {
+    background-color: #f5f0f0;
+    color: black;
+  }
+  & + .Contact {
+    margin-top: 10px;
+  }
+}
+.ContactForm {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  & input {
+    padding: 5px 20px;
+    background-color: rgb(240, 255, 239);
+  }
+}
+.Button {
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  background-color: rgb(238, 255, 224);
+  color: black;
+  &:hover,
+  :focus {
+    background-color: rgb(250, 216, 216);
+  }
+}
+
+.Form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  & + .Form {
+    margin-top: 10px;
+  }
+}

@@ -1,15 +1,15 @@
 import PropTypes from 'prop-types';
-import s from './Section.module.scss'
+import s from './Section.module.scss';
 
 const Section = ({ children, title }) => {
   return (
     <section className={s.Section}>
-      <div className={s.Conteiner } >
-        <h1>{title}</h1>
+      <div className={s.Container}>
+        <h2 className={s.Title}>{title}</h2>
         {children}
       </div>
     </section>
-  )
+  );
 };
 
 Section.propTypes = {
